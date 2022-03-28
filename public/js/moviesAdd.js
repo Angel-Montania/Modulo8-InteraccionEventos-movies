@@ -23,32 +23,24 @@ window.onload = function () {
         switch (event.key) {
             case "s" || "S":
                 estadoSecreto = 1;
-                console.log(estadoSecreto)
                 break;
             case "e" || "E":
                 if(estadoSecreto == 1) {
                     estadoSecreto = 2;
-                    console.log(estadoSecreto);
-                    console.log("Primera E")
                     break;
                 } else if(estadoSecreto == 4) {
-                    estadoSecreto = 5
-                    console.log(estadoSecreto);
-                    console.log("segunda E");
+                    estadoSecreto = 5;
                     break;
                 };
             case "c" || "C":
                 if(estadoSecreto == 2) estadoSecreto = 3;
-                console.log(estadoSecreto);
                 break;
             case "r" || "R":
                 if(estadoSecreto == 3) estadoSecreto = 4;
-                console.log(estadoSecreto);
                 break;
             case "t" || "T":
                 if(estadoSecreto == 5) {
                     estadoSecreto = 6
-                    console.log(estadoSecreto);
                 };
                 break;
             case "o" || "O":
